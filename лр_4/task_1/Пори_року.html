@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Пори року</title>
+    <style>
+      /* Стилі для нумерованого списку */
+      ol {
+        list-style-type: decimal;
+        margin-left: 20px;
+      }
+
+      /* Стилі для маркованого списку */
+      ul {
+        list-style-type: disc;
+        margin-left: 20px;
+      }
+
+      /* Стилі для вкладеного списку */
+      ul ul {
+        list-style-type: circle;
+        margin-left: 20px;
+      }
+
+      /* Стилі для списку починаючи з певного номера */
+      ol.start {
+        counter-reset: item;
+      }
+
+      li.start::before {
+        content: counter(item) '. ';
+        counter-increment: item;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Список місяців за сезонами</h1>
+
+    <h2>Весна</h2>
+    <ol>
+      <li>Березень</li>
+      <li>Квітень</li>
+      <li>Травень</li>
+    </ol>
+
+    <h2>Літо</h2>
+    <ul>
+      <li>Червень</li>
+      <li>Липень</li>
+      <li>Серпень</li>
+    </ul>
+
+    <h2>Осінь</h2>
+    <ul>
+      <li>Вересень</li>
+      <li>Жовтень</li>
+      <li>Листопад</li>
+    </ul>
+
+    <h2>Зима</h2>
+    <ol start="12">
+      <li>Грудень</li>
+      <li>Січень</li>
+      <li>Лютий</li>
+    </ol>
+  </body>
+</html>

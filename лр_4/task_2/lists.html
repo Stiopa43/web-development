@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Списки</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        text-align: center;
+        font-size: 2em;
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+
+      ul {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+        margin-bottom: 20px;
+      }
+
+      ul li {
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 5px;
+      }
+
+      ul ul {
+        margin-left: 20px;
+      }
+
+      ul ul li {
+        border: none;
+        padding: 5px 0;
+        margin-bottom: 0;
+      }
+
+      ul ul li:before {
+        content: '▹';
+        margin-right: 5px;
+        color: #999;
+      }
+
+      ol {
+        list-style-type: decimal;
+        margin-left: 0;
+        padding-left: 20px;
+        margin-bottom: 20px;
+      }
+
+      ol li {
+        margin-bottom: 5px;
+      }
+
+      ol ol {
+        list-style-type: lower-alpha;
+        margin-left: 20px;
+        padding-left: 0;
+      }
+
+      ol ol li {
+        margin-bottom: 0;
+      }
+
+      ol ol li:before {
+        content: '(' counter(lower-alpha) ')';
+        margin-right: 5px;
+        color: #999;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Списки</h1>
+    <ul>
+      <li>Троянди</li>
+      <li>Гвоздики</li>
+      <li>Тюльпани</li>
+      <li>Ромашки</li>
+    </ul>
+    <ol>
+      <li>
+        Фрукти:
+        <ul>
+          <li>Ананас</li>
+          <li>Апельсин</li>
+          <li>Банан</li>
+          <li>Яблуко</li>
+          <li>Мандарин</li>
+        </ul>
+      </li>
+      <li>
+        Овочі:
+        <ol>
+          <li>Картопля</li>
+          <li>Огірок</li>
+          <li>Буряк</li>
+          <li>Морква</li>
+          <li>Баклажан</li>
+        </ol>
+      </li>
+      <li>
+        Ягоди
+        <ul>
+          <li>Полуниця</li>
+          <li>Малина</li>
+          <li>Смородина</li>
+        </ul>
+      </li>
+    </ol>
+  </body>
+</html>

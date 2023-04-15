@@ -1,0 +1,71 @@
+body {
+  font-family: 'Raleway';
+  font-size: 14px;
+  line-height: 1.5em;
+  color: #252a2f;
+}
+.container {
+  max-width: 1160px; /* a real width of this container is 1120px */
+  margin: 0 auto;
+}
+
+/* header */
+.header {
+  background-color: #170f1b;
+  padding: 28px 0px;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px; /* to take away the touching of the elements */
+}
+.header__navigation {
+  display: flex;
+  align-items: center;
+}
+.header__social-links {
+  display: flex;
+  align-items: center;
+}
+.header__social-links > li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.header__logo {
+}
+.header__logo-link {
+}
+.header__logo-image {
+}
+.header__soical-element {
+}
+.header__social-link {
+}
+.header__social-image {
+}
+
+.header__burger {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__burger::before,
+.header__burger::after {
+  content: '';
+}
+.header__burger-middle-element,
+.header__burger::before,
+.header__burger::after {
+  width: 35px;
+  height: 7px;
+  background-color: #dee1e6;
+  margin-bottom: 3px;
+}
+.header__burger::after {
+  margin-bottom: 0;
+}
+.header__burger {
+  cursor: pointer;
+  margin-left: 80px;
+}
